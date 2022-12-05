@@ -1,0 +1,152 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!--links-->  
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+         <!--BOOTSTRAP-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--img do title-->
+        <link rel="shortcut icon" href="images/sol.jpg" type="image/x-icon">
+
+        <title>Luz Do Sol</title>
+    </head>
+    <body>
+      <div class="container-fluid">
+        <header>
+              <div class="row">
+                <div class="col-4">
+                  <img src="images/sol.jpg">
+                </div>
+                <div class="col-4">
+                  <h1 class="h1">Luz Do Sol</h1>
+                </div>  
+              </div>
+        </header>
+        <nav>
+          <div class="row">
+            <div class="col-sm">
+              <a href="index.html">Home</a>
+            </div>
+            <div class="col-sm">
+              <a href="galeria.html">Galeria</a>
+            </div>
+            <div class="col-sm">
+              <a href="#">Quartos/Suítes</a>
+            </div>
+            <div class="col-sm">
+              <a href="contato.html">Reserva</a>
+            </div>
+          </div>
+        </nav>
+        <hr>
+          <!--acaba os titulos-->
+          <div class="cadastroC">
+            <form name="cadastroCliente">
+              <label>Nome:</label>
+              <input type="text" name="nome"  size="60" id="nome" placeholder="Ex: Maria Fernanda da Silva">
+              <label>E-mail:</label>
+              <input type="text" name="email" size="60" id="email" placeholder="Ex: fulano21@gmail.com">
+             <br>
+              <input type="button" value="Cadastrar" onclick="verificar()">
+            </form>
+          </div>
+          <form>
+                <div class="row">
+                  <div class="col-4" id="Hospedes">
+                    <label>Digite a quantidade de Hospedes:</label>
+                    <input type="text" class="form-control" placeholder="Nº de Hóspedes" required id="qtdeHospede">
+                  </div>
+                  <br>
+                  <div class="col-4" id="qtdediaria">
+                  <label>Digite a quantidade de Diárias:</label>
+                  <input type="text" class="form-control" placeholder="Nº de Diárias" required id="qtdeDiaria">
+                  </div>
+                </div>
+          </form> 
+          <form>
+              <div class="form-group" id="reserva">
+                <label for="exampleFormControlSelect1">Suites Oferecidas:</label>
+                <select class="form-control" id="slcSuite">
+                  <option value="0">Selecione...</option>
+                  <option value="1">Paz</option>
+                  <option value="2">Ilheiro</option>
+                  <option value="3">Carmesim</option>
+                  <option value="4">Carinho</option>
+                  <option value="5">Afeto</option>
+                  <option value="6">Harmonia</option>
+                </select>
+              </div>
+          </form>
+        <form action="dadoR" name="form">
+        <div class="gender-details">
+          <span class="refeição">Refeições:</span>
+            <div class="category" id="seila">
+              <br>
+              <label class="dot-1">
+              <span class="dot one"></span>
+              <span class="gender"></span>
+              <input type="radio" id="comida" name="rdEntrega" value="1"> Café da Manhã</label>
+              <label class="dot-2">
+              <span class="dot two"></span>
+              <span class="gender"></span>
+              <input type="radio" id="comida" name="rdEntrega" value="2"> Meia pensão</label>                         
+              <label class="dot-3">
+              <span class="dot three"></span>
+                    <span class="gender"></span>
+                       <input type="radio" id="comida" name="rdEntrega" value="3"> Pensão Completa</label>
+        </div>
+        </form>
+        <br>
+        
+        <div class="Titulo2">
+          Serviços Adicionais:
+        </div>
+        <br>
+          <div class="caixa">
+            <input type="checkbox" id="traslado" name="embalagem"> Traslado
+       
+       
+          <input type="checkbox" id="tuor" name="cartao"> City Tour
+        
+       
+          <input type="checkbox" id="passeio" name="cartao"> Passeio
+        </div>
+        <br>
+        <div class="button" id="button">
+          <input type="button" value="Calcular" onclick="calcular()">
+        </div>
+        </form>
+        <hr>
+        <div class = "dados" id = dados>
+        <h4>Dados da reserva</h4>
+         <div id="nomeProduto" style="color: #e0741c;"></div>
+          <br>
+          <div id="valorUnitario"  style="color: #e0741c;"></div>
+          <br>
+          <div id="adicionais"  style="color: #e0741c;"></div>
+          <br>
+          <div id="diaria"  style="color: #e0741c;"></div>
+          <br>
+          <div id="comida1"  style="color: #e0741c;"></div>
+          <br>
+          <div id="valorTotal"  style="color: #e0741c;"></div>
+          <hr>
+        </div>
+        </div><!--termina o container-->
+         <!--Aqui começa o footer-->
+         <div class="row">
+          <div class="col-sm">
+             <footer>
+               <h5>Rua Alcio Carneiro de Lima Nº276</h5>
+               <h5>Email:pousadaluzdosol@gmail.com</h5>
+             </footer>
+          </div>
+         </div>
+    
+        <script src="js/js.js"></script>
+    </body>
+</html>
